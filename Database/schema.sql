@@ -16,7 +16,7 @@ CREATE TABLE products (
 -- Orders table
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
-    customer_id INT REFERENCES customer(id) ON DELETE CASCADE,
+    customer_id INT REFERENCES customers(id) ON DELETE CASCADE,
     order_date TIMESTAMP DEFAULT NOW()
 );
 -- Order Items table
