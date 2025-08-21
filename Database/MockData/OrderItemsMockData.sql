@@ -8,4 +8,7 @@ FROM orders o
         FROM products
         ORDER BY random()
         LIMIT (1 + floor(random() * 100)) -- Limiting the amount of products per order
-    ) AS p ON true;
+    ) AS p ON true
+GROUP BY o.id,
+    p.id;
+-- Preventing duplicating same products per order
