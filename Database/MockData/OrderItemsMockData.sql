@@ -1,0 +1,14 @@
+INSERT INTO order_items (order_id, product_id, quantity)
+SELECT o.id AS order_id,
+    p.id AS product_id,
+    (floor(random() * 50) + 1)::int AS quantity
+FROM orders o
+    JOIN LATERAL (
+        SELECT id
+        FROM products
+        ORDER BY random()
+        LIMIT (1 + floor(random() * 100)) -- Limiting the amount of products per order
+    ) AS p ON true
+GROUP BY o.id,
+    p.id;
+-- Preventing duplicating same products per order
