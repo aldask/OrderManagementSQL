@@ -1,15 +1,10 @@
-﻿using System.Text.Json;
+﻿namespace OrderManagementSQL_API.Models;
 
-namespace OrderManagementSQL_API.Models
+public class Customer
 {
-    public class Customer
-    {
-        public int Id { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? Email { get; set; }
-        public JsonDocument? Details { get; set; }
-
-        public List<Order>? Orders { get; set; }
-    }
+    public int Id { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? Email { get; set; }
+    public string? Details { get; set; }
 }
