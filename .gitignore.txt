@@ -1,0 +1,12 @@
+.vs/
+*.vscode/
+*.user
+*.suo
+*.dbmdl
+*.jfm
+
+bin/
+obj/
+
+pgdata/
+pgadmindata/
