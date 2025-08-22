@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrderManagementSQL_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3e5ae43e869bf966078fbb1891ebe486db61551")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d30194164c4be4b489a34a93712d6d3450b63b0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrderManagementSQL_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrderManagementSQL_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
