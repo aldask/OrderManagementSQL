@@ -3,7 +3,7 @@ SELECT (
         floor(
             random() * (
                 SELECT max(id)
-                FROM customer
+                FROM customers
             )
         ) + 1
     )::int AS customer_id,

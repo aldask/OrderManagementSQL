@@ -1,4 +1,4 @@
-INSERT INTO customer (first_name, last_name, email, details)
+INSERT INTO customers (first_name, last_name, email, details)
 SELECT 'FirstName' || gs AS first_name,
     'LastName' || gs AS last_name,
     'userMail' || gs || '@mail.com' AS email,
