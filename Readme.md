@@ -50,13 +50,13 @@ A PostgreSQL database solution for managing customers, products, and orders, wit
    ```
 
 3. Run PostgreSQL with Docker:
-   1. Stop current containers
+   1. Remove current container + volumes:
       ```bash
-      docker -compose down
+      docker compose down -v
       ```
-    2. Create container:
+    2. Creates container:
        ```bash
-       docker -compose up -d
+       docker compose up -d
        ```
     3. Verify containers are running:
        ```bash
@@ -73,3 +73,4 @@ A PostgreSQL database solution for managing customers, products, and orders, wit
        ```bash
        dotnet run
        ```
+
