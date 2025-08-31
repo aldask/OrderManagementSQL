@@ -12,4 +12,4 @@ FROM generate_series(1, 10000) gs,
     LATERAL (
         SELECT ARRAY ['Lithuania','USA','UK','France','Latvia'] AS countries,
             ARRAY ['Kaunas','Vilnius','London', 'Washington', 'Paris','Riga'] AS cities
-    );
+    ) AS loc;
