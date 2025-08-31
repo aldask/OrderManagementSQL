@@ -6,3 +6,7 @@ CREATE TABLE customers (
     email VARCHAR(255) UNIQUE,
     details JSONB
 );
+CREATE INDEX idx_customers_first_name ON customers(first_name);
+CREATE INDEX idx_customers_last_name ON customers(last_name);
+CREATE INDEX idx_customers_city ON customers(details->>'city');
+CREATE INDEX idx_customers_country ON customers(details->>'country');

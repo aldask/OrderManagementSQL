@@ -5,3 +5,5 @@ CREATE TABLE order_items (
     quantity INT,
     PRIMARY KEY(order_id, product_id)
 );
+CREATE INDEX idx_order_id on order_items(order_id);
+CREATE INDEX idx_product_id on order_items(product_id);
